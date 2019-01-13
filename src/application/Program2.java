@@ -27,26 +27,25 @@ public class Program2 {
 			System.out.println(dep);
 		}
 
-		/*
-		System.out.println("\n=== TEST 4: seller insert ===");
-		Seller newSeller = new Seller(null, "Fabiano", "fabiano@gmail.com", new Date(), 4000.0, department);
-		sellerDao.insert(newSeller);
-		System.out.println("Inserted! New id: " + newSeller.getId());
-
-		System.out.println("\n=== TEST 5: seller update ===");
-		seller = sellerDao.findById(1);
-		seller.setName("Martha Waine");
-		seller.setEmail("marthawaine@gmail.com");
-		sellerDao.update(seller);
-		System.out.println("Updated! New Name: " + seller.getName() + ",  New email: " + seller.getEmail());
-
-		System.out.println("\n=== TEST 6: seller delete ===");
+		
+		System.out.println("\n=== TEST 4: departament insert ===");
+		Department newDepartment =  new Department(null, "Food");
+		departmentDao.insert(newDepartment);
+		System.out.println("Inserted! New id: " + newDepartment.getId());
+		
+		
+		System.out.println("\n=== TEST 5: department update ===");
+		department = departmentDao.findById(5);
+		department.setName("Fashion");
+		departmentDao.update(department);
+		System.out.println("Updated! New Name: " + department.getName());
+		
+		System.out.println("\n=== TEST 6: departement delete ===");
 		System.out.println("Enter id for delete test: ");
 		int id = sc.nextInt();
-		sellerDao.deleteByid(id);
+		departmentDao.deleteByid(id);
 		System.out.println("Delete completed");
-		*/
-		
+			
 		sc.close();
 
 	}
